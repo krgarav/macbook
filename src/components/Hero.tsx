@@ -11,6 +11,8 @@ const Hero: FC<HeroProps> = (props) => {
       </div>
 
       <video src="/videos/hero.mp4" autoPlay muted/>
+      <button>BUY</button>
+      <p>From $1599 for 12 months</p>
     </section>
   );
 };
