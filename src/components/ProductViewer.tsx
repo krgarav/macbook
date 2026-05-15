@@ -64,7 +64,7 @@ const ProductViewer = () => {
       >
         <StudioLights />
        
-        <ModelSwitcher scale={isMobile ? scale - 0.03 : scale} />
+        <ModelSwitcher scale={isMobile ? scale - 0.03 : scale} isMobile={isMobile} />
         <OrbitControls enableZoom={false} />
       </Canvas>
     </section>

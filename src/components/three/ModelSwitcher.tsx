@@ -2,7 +2,10 @@ import { PresentationControls } from "@react-three/drei";
 import { memo, useRef, type FC } from "react";
 import MacbookModel16 from "../models/Macbook-16";
 
-interface ModelSwitcherProps {}
+interface ModelSwitcherProps {
+  scale: number;
+  isMobile: boolean;
+}
 
 const ModelSwitcher: FC<ModelSwitcherProps> = ({ scale, isMobile }) => {
   const smallMacbookRef = useRef("");
@@ -12,7 +15,7 @@ const ModelSwitcher: FC<ModelSwitcherProps> = ({ scale, isMobile }) => {
     snap :true,
     speed : 1,
     zoom : 1,
-    azimuth : [-Infinity , Infinity],
+    azimuth : [-Infinity , Infinity] as [number, number],
     config : {mass : 1, tension: 0,friction : 26}
   }
   return (
