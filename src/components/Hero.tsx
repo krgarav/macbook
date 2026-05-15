@@ -2,7 +2,7 @@ import { memo, type FC } from "react";
 
 interface HeroProps {}
 
-const Hero: FC<HeroProps> = (props) => {
+const Hero: FC<HeroProps> = () => {
   return (
     <section id="hero">
       <div>

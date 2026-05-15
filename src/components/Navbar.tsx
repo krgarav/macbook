@@ -2,9 +2,7 @@ import { navLinks } from "../constants";
 
 
 const Navbar = () => {
-  type NavItem = {
-    label: string;
-  };
+  
   return (
     <div>
       <header>
