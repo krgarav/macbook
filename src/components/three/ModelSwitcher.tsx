@@ -10,7 +10,7 @@ interface ModelSwitcherProps {
 const ModelSwitcher: FC<ModelSwitcherProps> = ({ scale, isMobile }) => {
 //   const smallMacbookRef = useRef("");
   const largeMacbookRef = useRef("");
-//   const showLargeMacbook = scale === 0.08 || scale === 0.05;
+  const showLargeMacbook = scale === 0.08 || scale === 0.05;
   const controlConfig = {
     snap :true,
     speed : 1,
@@ -19,7 +19,7 @@ const ModelSwitcher: FC<ModelSwitcherProps> = ({ scale, isMobile }) => {
     config : {mass : 1, tension: 0,friction : 26}
   }
   return (
-    <>
+    <>{showLargeMacbook}
       <PresentationControls {...controlConfig}>
         <group ref={largeMacbookRef}>
           <MacbookModel16 scale={isMobile ? 0.05 : 0.08} />
