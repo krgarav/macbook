@@ -8,9 +8,9 @@ interface ModelSwitcherProps {
 }
 
 const ModelSwitcher: FC<ModelSwitcherProps> = ({ scale, isMobile }) => {
-  const smallMacbookRef = useRef("");
+//   const smallMacbookRef = useRef("");
   const largeMacbookRef = useRef("");
-  const showLargeMacbook = scale === 0.08 || scale === 0.05;
+//   const showLargeMacbook = scale === 0.08 || scale === 0.05;
   const controlConfig = {
     snap :true,
     speed : 1,
